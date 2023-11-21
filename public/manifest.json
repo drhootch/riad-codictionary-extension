@@ -1,0 +1,33 @@
+{
+    "name": "First Extensions",
+    "description": "Basic Chrome Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "index.html",
+      "default_title": "My first extension"
+    },
+    "icons": {
+      "16": "assets/riadh.png",
+      "48": "assets/riadh.png",
+      "128": "assets/riadh.png"
+    },
+    "web_accessible_resources": [
+        "index.html",
+        "/assets/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": [
+            "content_scripts/content_scripts.js",
+            "content_scripts/browser-polyfill.js",
+            "assets/index.js"
+        ],
+        "css": [
+            "assets/index.css"
+        ]
+        }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
