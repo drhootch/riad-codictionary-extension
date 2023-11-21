@@ -5,8 +5,7 @@ export default {
     },
     important: "#riadh_app",
     content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "./app/riadh_main.html",
     ],
     theme: {
         extend: {},

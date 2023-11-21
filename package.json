@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && npm run copy",
+    "preview": "vite preview",
+    "copy": "copy app/riadh_main.html dist/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.13.2",
-    "alpinejs": "^3.13.2"
+    "alpinejs": "^3.13.2",
+    "copy": "^0.3.2"
   }
 }

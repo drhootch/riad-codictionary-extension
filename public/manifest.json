@@ -3,18 +3,14 @@
     "description": "Basic Chrome Extension",
     "version": "1.0",
     "manifest_version": 2,
-    "browser_action": {
-      "default_popup": "index.html",
-      "default_title": "My first extension"
-    },
     "icons": {
       "16": "assets/riadh.png",
       "48": "assets/riadh.png",
       "128": "assets/riadh.png"
     },
     "web_accessible_resources": [
-        "index.html",
-        "/assets/*"
+        "app/riadh_main.html",
+        "assets/*"
     ],
     "content_scripts": [
         {
@@ -22,10 +18,10 @@
         "js": [
             "content_scripts/content_scripts.js",
             "content_scripts/browser-polyfill.js",
-            "assets/index.js"
+            "assets/riadh_main.js"
         ],
         "css": [
-            "assets/index.css"
+            "assets/riadh_main.css"
         ]
         }
     ],
