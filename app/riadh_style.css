@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
 #riadh_app *{
-    all: unset;
+    all: initial;
+    font-family: 'Tajawal';
 }

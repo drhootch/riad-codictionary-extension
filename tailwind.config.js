@@ -8,7 +8,11 @@ export default {
         "./app/riadh_main.html",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                tajawal: ['Tajawal'],
+            },
+        },
     },
     plugins: [],
 }

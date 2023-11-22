@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // other config
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
